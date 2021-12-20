@@ -1,0 +1,44 @@
+/* GENERAL  */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0px 50px;
+    align-items: center;
+}
+
+
+/* NAV BAR */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5b9a20;
+    color:white;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-right: 40px;
+  }
+
+  nav ul li:hover{
+      color:#dbe3d2;
+      text-decoration: underline;
+      font-weight: bold;
+  }
+
+  /* INDEX */
+ #infographie{
+     display: flex;
+     justify-content: space-between;
+     padding: 50px;
+     background-color:#dbe3d2;
+ }
