@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <script type="text/javascript" src="./js/script.js"></script>
   <title>Éco-consommation responsable</title>
@@ -9,7 +11,7 @@
 <body>
   <nav>
     <span id="logo">
-      LOGO       
+      <img id="visuelLogo" src="src/ecoconso.png" />     
     </span>
     
     <ul>
@@ -25,7 +27,12 @@
   <header>
     <h1>
         <!-- Mettre ici le bloc carrousel avec les previews -->
-        TITRE
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1>Éco-conso</h1>
+            <h3>Votre blog pour mieux consommer</h3>
+          </div>
+        </div>
     </h1>
   </header>
 
@@ -35,17 +42,48 @@
     <p>Faites le test!</p> <!-- Lien vers le quizz -->
   </div>
 
+  <!-- Alexandre Infographie-->
   <div id="infographie">
+
     <div id="info1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      
+      <h2 id="title_info1">Titre Infographie 1</h2>
+
+      <img src="src/info-dechets.png" alt="Infographie dechets">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
     </div>
+
     <div id="info2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <h2 id="title_info2">Titre Infographie 1</h2>
+
+      <img src="src/info-depenses.png" alt="Infographie dépenses">
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
     </div>
+
     <div id="info3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      <h2 id="title_info3">Titre Infographie 1</h2>
+
+      <img src="src/info-recyclage.png" alt="Infographie recyclage">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
     </div>
     
+    
   </div>
+  
+  <div id="questionnaire">
+   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   <input class="bouton" type="button" value="Faites le test">
+  </div>
+ 
+
+
 </body>
 </html>
