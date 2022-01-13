@@ -4,18 +4,38 @@ html, body {
   padding: 0;
   font-family: 'Merriweather', serif;
 }
-p{
-  margin: 0px 50px;
+body, html{
+  height:100%;
+}
+p {
+  margin: 10px 50px;
   align-items: center;
+  color: #A17F52;
 }
 .bouton {
  background-color : #98AE68;
+ margin-top: 30px;
+ border-style: none;
+ border-radius: 15px;
  align-items: center;
+ font-size: 24px;
+ font-family: roboto;
  color: white;
- 
+ width: 207px;
+ height: 47px;
+ cursor: pointer;
 }
-.questionnaire {
-  align-items: center;
+.bloc_questionnaire {
+  color: #A17F52;
+  text-align: center;
+  padding: 40px;
+}
+#backToTop {
+  display: flex;
+  justify-content: center;
+}
+.titleNoMarge {
+  margin: 0;
 }
 /* NAV BAR */
 nav {
@@ -34,9 +54,13 @@ nav ul li {
   margin-right: 40px;
 }
 nav ul li:hover{
-  color:#dbe3d2;
+  color:#F6EFDE;
   text-decoration: underline;
   font-weight: bold;
+}
+nav a{
+  color:white;
+  text-decoration: none;
 }
 /* INDEX */
 #infographie{
@@ -53,6 +77,26 @@ nav ul li:hover{
 }
 #imgArbre{
   height: 250px;
+}
+#main {
+  min-height:100%;
+  margin:0 auto;
+  position:relative;
+}
+.sectionIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+#section1 {
+  background-color: #EFE2C1;
+}
+#lienContact {
+  color: white;
+  font-weight: bold;
 }
 /* BANNIERE */
 .hero-image {
@@ -72,5 +116,26 @@ nav ul li:hover{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+/* FOOTER */
+footer {
+  background-color:#A17F52;
+  position:absolute;
+  width:100%;
+  padding:10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+footer p {
+  color: white;
+}
+.underline {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=index.cb41b962.css.map */
