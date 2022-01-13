@@ -10,7 +10,6 @@ body, html{
 }
 
 p {
-  margin: 10px 50px;
   align-items: center;
   color: #A17F52;
 }
@@ -35,6 +34,10 @@ p {
   padding: 40px;
 }
 
+#presentation {
+  margin: 10px 50px;
+}
+
 #backToTop {
   display: flex;
   justify-content: center;
@@ -47,7 +50,7 @@ p {
 /* NAV BAR */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #98AE68;
   color:white;
@@ -72,6 +75,31 @@ nav ul li:hover{
 nav a{
   color:white;
   text-decoration: none;
+}
+
+/* MOBILE */
+@media screen and (max-width: 850px) {
+  #liensMenu {
+    display: none;
+  }
+  
+  .img-info {
+    width: 100%;
+  }
+
+  nav li {
+    padding-bottom: 5px;
+  }
+
+  #iconeMenu {
+    padding-right: 10px;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 851px) {
+  #iconeMenu {
+    display: none;
+  }
 }
 
 /* INDEX */
@@ -102,7 +130,6 @@ nav a{
 .sectionIndex {
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
   flex-direction: column;
   padding: 10px 20px;
@@ -140,10 +167,10 @@ nav a{
 
 /* FOOTER */
 footer {
-  background-color:#A17F52;
-  position:absolute;
-  width:100%;
-  padding:10px;
+  background-color: #A17F52;
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -160,4 +187,15 @@ footer p {
 
 .underline {
   text-decoration: underline;
+}
+
+@media screen and (min-width:850px) {
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  #aboutUs, #aboutSchool {
+    padding : 0 10px;
+  }
 }
