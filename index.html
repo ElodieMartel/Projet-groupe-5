@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="user-scalable = yes"> -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
@@ -14,15 +13,15 @@
   <div id="main">
     <nav>
       <span id="logo">
-        <img id="visuelLogo" src="src/ecoconso.png" />     
+        <a href="index.html"><img id="visuelLogo" src="src/ecoconso.png" /></a>     
       </span>
       
       <ul id="liensMenu">
-        <li><a href="#">Seconde main</a></li>
+        <li><a href="secondeMain.html">Seconde main</a></li>
         <li><a href="#">Consommer local</a></li>
         <li><a href="#">Compostage</a></li>
-        <li><a href="#">Transport</a></li>
-        <li><a href="#">Emballages</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="emballages.html">Emballages</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <a href="javascript:void(0);" id="iconeMenu" onclick="toggleMenu()">
@@ -32,7 +31,7 @@
     </nav>
     <header>
       <h1 class="titleNoMarge">
-        <div class="hero-image">
+        <div class="hero-image hero-image-index">
           <div class="hero-text">
             <h1>Éco-conso</h1>
             <h3>Votre blog pour mieux consommer</h3>
@@ -41,7 +40,8 @@
       </h1>
     </header>
 
-    <div id="presentation">
+    <div class="bloc_questionnaire">
+      <h3 class="titre-alt1">Bienvenue sur le blog d'Éco-conso !</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <br/>
     </div>
@@ -49,20 +49,20 @@
     <!-- Alexandre Infographie-->
     <div id="infographie">
 
-      <div id="info1">
-        <h2 id="title_info1">Titre Infographie 1</h2>
+      <div id="info1" class="info">
+        <h2 class="titre-alt2" id="title_info1">Titre Infographie 1</h2>
         <img src="src/info-dechets.png" class="img-info" alt="Infographie dechets">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
 
-      <div id="info2">
-        <h2 id="title_info2">Titre Infographie 1</h2>
+      <div id="info2" class="info">
+        <h2 class="titre-alt2" id="title_info2">Titre Infographie 1</h2>
         <img src="src/info-depenses.png" class="img-info" alt="Infographie dépenses">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
 
-      <div id="info3">
-        <h2 id="title_info3">Titre Infographie 1</h2>
+      <div id="info3" class="info">
+        <h2 class="titre-alt2" id="title_info3">Titre Infographie 1</h2>
         <img src="src/info-recyclage.png" class="img-info" alt="Infographie recyclage">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
@@ -70,6 +70,7 @@
     </div>
     
     <div class="bloc_questionnaire">
+      <h3 class="titre-alt1">Quel est votre impact environnemental?</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
         rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -77,18 +78,22 @@
       </p>
       <input class="bouton" type="button" value="Faites le test">
     </div>
-  
-    <div id="section1" class="sectionIndex">
-      <h2>Titre section 1</h2>
-      <p>* IMAGE *</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
 
-    <div id="section2" class="sectionIndex">
-      <h2>Titre section 2</h2>
-      <p>* IMAGE *</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <div id="section1" class="sectionBeige div-page-contenu div-row-reverse">
+      <div class="img-center contenu-half"><img class="image-contenu" src="src/architecture-nature.jpg" /></div>
+      <div class="contenu-half">
+          <h3 class="titre-alt2">Section 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+  </div>
+
+  <div id="section2" class="div-page-contenu div-row">
+      <div class="img-center contenu-half"><img class="image-contenu" src="src/filling-water.jpg" /></div>
+      <div class="contenu-half">
+          <h3 class="titre-alt1">Section 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+  </div>
 
     <div id="backToTop">
       <input class="bouton" type="button" id="boutonBTT" onclick="topFunction()" value="Back to top ↑">

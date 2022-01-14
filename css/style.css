@@ -16,7 +16,7 @@ p {
 
 .bouton {
  background-color : #98AE68;
- margin-top: 30px;
+ margin-top: 10px;
  border-style: none;
  border-radius: 15px;
  align-items: center;
@@ -29,13 +29,8 @@ p {
 }
 
 .bloc_questionnaire {
-  color: #A17F52;
   text-align: center;
-  padding: 40px;
-}
-
-#presentation {
-  margin: 10px 50px;
+  padding: 20px;
 }
 
 #backToTop {
@@ -45,6 +40,75 @@ p {
 
 .titleNoMarge {
   margin: 0;
+}
+
+.div-page-contenu {
+  padding: 5px 30px;
+}
+
+.titre-alt1 {
+  color: #98AE68;
+  text-shadow: 1px 1px 2px beige;
+  margin: 15px 0 0 0;
+}
+
+.titre-alt2 {
+  color: white;
+  text-shadow: 1px 1px 2px #8b692d;
+  margin: 15px 0 0 0;
+}
+
+.image-contenu {
+  max-height: 250px;
+  max-width: 80%;
+  margin: 10px;
+}
+
+.image-contenu-double {
+  max-width: 45%!important;
+}
+
+.div-page-contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MOBILE */
+@media screen and (max-width : 768px) {
+  .img-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width : 769px) {
+  .contenu-half {
+    width : 49%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .div-row {
+    flex-direction: row;
+  }
+
+  .div-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .img-center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contenu-half p , .contenu-half h3 {
+    margin : 10px;
+  }
 }
 
 /* NAV BAR */
@@ -84,7 +148,7 @@ nav a{
   }
   
   .img-info {
-    width: 100%;
+    max-width: 70%;
   }
 
   nav li {
@@ -105,11 +169,10 @@ nav a{
 /* INDEX */
 #infographie{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
-  padding: 50px;
+  padding: 10px;
   background-color:#EFE2C1;
-  flex-wrap: wrap;
 }
 
 #visuelLogo{
@@ -135,7 +198,7 @@ nav a{
   padding: 10px 20px;
 }
 
-#section1 {
+.sectionBeige {
   background-color: #EFE2C1;
 }
 
@@ -147,12 +210,23 @@ nav a{
 /* BANNIERE */
 .hero-image {
   /* "linear-gradient" ajoute un effet sombre pour améliorer la lisibilité */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/arbre.jpg");
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.hero-image-index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/arbre.jpg");
+}
+
+.hero-image-transport {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/autoroute.jpg");
+}
+
+.hero-image-seconde-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/vente_en_ligne.jpg");
 }
 
 /* Placer le texte de la bannière au centre */
@@ -189,6 +263,7 @@ footer p {
   text-decoration: underline;
 }
 
+/* DESKTOP */
 @media screen and (min-width:850px) {
   footer {
     flex-direction: row;
@@ -197,5 +272,24 @@ footer p {
   
   #aboutUs, #aboutSchool {
     padding : 0 10px;
+  }
+
+  .info {
+    padding: 0 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .img-info {
+    max-width : 90%;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width : 768px) {
+  #infographie {
+    flex-wrap: wrap;
   }
 }
