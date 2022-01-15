@@ -147,7 +147,7 @@ nav a{
 }
 
 /* MOBILE */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   #liensMenu {
     display: none;
   }
@@ -165,9 +165,13 @@ nav a{
   }
 }
 /* DESKTOP */
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 769px) {
   #iconeMenu {
     display: none;
+  }
+
+  #liensMenu {
+    display: flex;
   }
 }
 
@@ -249,7 +253,7 @@ footer {
   background-color: #A17F52;
   position: absolute;
   width: 100%;
-  padding-top: 10px;
+  padding: 10px 0;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -269,10 +273,10 @@ footer p {
 }
 
 /* DESKTOP */
-@media screen and (min-width:850px) {
+@media screen and (min-width:769px) {
   footer {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
   }
   
   #aboutUs, #aboutSchool {
