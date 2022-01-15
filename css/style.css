@@ -9,7 +9,7 @@ body, html{
   height:100%;
 }
 
-p {
+p, .liste{
   align-items: center;
   color: #A17F52;
 }
@@ -71,6 +71,11 @@ p {
 .div-page-contenu {
   display: flex;
   flex-direction: column;
+}
+
+.source {
+  font-style: italic;
+  font-size: 8px;
 }
 
 /* MOBILE */
