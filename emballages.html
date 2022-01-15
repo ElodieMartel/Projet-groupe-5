@@ -11,32 +11,84 @@
 </head>
 <body>
     
+  <body>
     <div id="main">
-        <nav>
-          <span id="logo">
-            <img id="visuelLogo" src="src/ecoconso.png" />     
-          </span>
-          
-          <ul>
-            <li><a href="#">Seconde main</a></li>
-            <li><a href="#">Consommer local</a></li>
-            <li><a href="#">Compostage</a></li>
-            <li><a href="#">Transport</a></li>
-            <li><a href="#">Emballages</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-    
-        </nav>
-        <header>
-          <h1 class="titleNoMarge">
-            <div class="hero-image">
-              <div class="hero-text">
-                <h1>Éco-conso</h1>
-                <h3>Votre blog pour mieux consommer</h3>
-              </div>
+      <nav>
+        <span id="logo">
+          <a href="index.html"><img id="visuelLogo" src="src/ecoconso.png" /></a>    
+        </span>
+        
+        <ul id="liensMenu">
+          <li><a href="secondeMain.html">Seconde main</a></li>
+          <li><a href="#">Consommer local</a></li>
+          <li><a href="#">Compostage</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="emballages.html">Emballages</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="javascript:void(0);" id="iconeMenu" onclick="toggleMenu()">
+          <i class="fa fa-bars fa-2x"></i>
+        </a>
+  
+      </nav>
+      <header>
+        <h1 class="titleNoMarge">
+          <div class="hero-image hero-image-transport">
+            <div class="hero-text">
+              <h1>Emballages</h1>
+              <h3>Quelles sont les solutions pour mieux consommer ?</h3>
             </div>
-          </h1>
-        </header>   
-
+          </div>
+        </h1>
+      </header>
+  
+      <div id="transports-en-commun" class="div-page-contenu div-row">
+          <div class="img-center contenu-half"><img class="image-contenu" src="src/Surremballage.png" /></div>
+          <div class="contenu-half">
+              <h3 class="titre-alt1">Eviter le surremballage !</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+      </div>
+  
+      <div id="velib" class="sectionBeige div-page-contenu div-row-reverse">
+          <div class="img-center contenu-half"><img class="image-contenu" src="src/Emballage Carton.jpeg" /></div>
+          <div class="contenu-half">
+              <h3 class="titre-alt2">Préférer le carton au plastique</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+      </div>
+  
+      <div id="voitures-electriques" class="div-page-contenu div-row">
+          <div class="img-center contenu-half"><img class="image-contenu" src="src/Emballages Réutilisables.jpeg" /></div>
+          <div class="contenu-half">
+            <h3 class="titre-alt1">Privilégier le réutilisable</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+      </div>
+  
+      <div id="backToTop">
+        <input class="bouton" type="button" id="boutonBTT" onclick="topFunction()" value="Back to top ↑">
+      </div>
+  
+      <footer>
+          <div id="footerLogo">
+            <img id="visuelLogo" src="src/ecoconso.png" />
+          </div>
+          <div id="aboutUs">
+            <p class="underline">À propos de nous</p>
+            <p>Projet Groupe 5 (Agathe Geniteau, Alexandre Delmer, Elodie Martel)</p>
+          </div>
+          <div id="aboutSchool">
+            <p class="underline">À propos de l'école</p>
+            <p>Remote dév Front-End session novembre 2021 - Wild Code School</p>
+          </div>
+          <div id="contact">
+            <p class="underline">Contacts</p>
+            <p><a href="#" id="lienContact">Nous contacter</a></p>
+          </div>
+        </footer>
+      </div>
+    
+    </body>
 </body>
 </html>
