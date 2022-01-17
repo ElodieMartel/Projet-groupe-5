@@ -302,3 +302,7 @@ footer p {
     flex-wrap: wrap;
   }
 }
+
+.title_form{
+  color: red;
+}
